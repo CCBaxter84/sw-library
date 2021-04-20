@@ -1,0 +1,41 @@
+.author-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-form > label {
+  font-size: 20px;
+}
+.author-form > input {
+  background-color: var(--form-input-background-color);
+  border: 1px solid var(--form-input-border-color);
+  border-radius: .25rem;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.author-form > * {
+  margin-top: 10px;
+}
+
+.author-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-btns {
+  align-items: center;
+  display: flex;
+  width: fit-content;
+}
+
+.author-btns > form {
+  display: flex;
+  align-items: center;
+}
+
+.books-by-author {
+  margin-top: 50px;
+}
+

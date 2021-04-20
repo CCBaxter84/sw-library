@@ -1,0 +1,17 @@
+<main>
+  <h2>{{ author.name }}</h2>
+  <section class="author-btns">
+    <a class="btn btn-primary" href="/authors/{{ author._id }}/edit">Edit</a>
+    {{> deleteAuthor author }}
+  </section>
+  <section class="books-by-author">
+    <h2>Books By Author</h2>
+    {{#each books }}
+      <article class="book-entry">
+        <h4>{{ this.title }}</h4>
+        <p>{{ this.description }}</p>
+      </article>
+    {{/each }}
+  </section>
+
+</main>

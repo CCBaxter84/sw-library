@@ -1,0 +1,14 @@
+<main>
+  <h2>Update Author</h2>
+  <form class="author-form" method="POST" action="{{ author.url }}?_method=PUT">
+    <label>Name</label>
+    <input type="text" name="name" value={{ author.name }}>
+    <section class="new-author-submit">
+      <a class="btn btn-danger" href="/authors">Cancel</a>
+      <button class="btn btn-primary" type="submit">Update</button>
+    </section>
+  </form>
+  {{#if error}}
+  <h2>{{ error }}</h2>
+  {{/if }}
+</main>

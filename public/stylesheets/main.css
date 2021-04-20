@@ -1,0 +1,49 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./authors.css";
+
+:root {
+  background-color: var(--color-background-dark);
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  margin: 50px 150px;
+}
+
+.btn {
+  border: 1px solid var(--color-btn-border);
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 16px;
+  padding: .5rem;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.btn-primary {
+  color: var(--color-btn-primary-text);
+  background-color: var(--color-btn-primary-background);
+}
+
+.btn-primary:hover {
+  color: var(--color-btn-primary-text-dark);
+  background-color: var(--color-btn-primary-background-dark);
+}
+
+.btn-danger {
+  color: var(--color-btn-danger-text);
+  background-color: var(--color-btn-danger-background);
+}
+
+.btn-danger:hover {
+  color: var(--color-btn-danger-text-dark);
+  background-color: var(--color-btn-danger-background-dark);
+}
+
+.submit, .new-author-submit {
+  align-self: flex-end;
+}
